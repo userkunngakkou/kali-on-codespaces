@@ -1,0 +1,16 @@
+{
+  "name": "Kali Linux GUI",
+  "image": "kalilinux/kali-rolling",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-python.python"
+      ]
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "forwardPorts": [5901],
+  "remoteUser": "root"
+}
